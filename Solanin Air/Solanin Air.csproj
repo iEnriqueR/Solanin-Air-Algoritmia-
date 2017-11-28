@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA4A126D-B2E4-4E6A-85A5-0B4638844D7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Solanin_Air</RootNamespace>
+    <AssemblyName>Solanin Air</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arista.cs" />
+    <Compile Include="FormAceptarGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAceptarGrafo.Designer.cs">
+      <DependentUpon>FormAceptarGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsientos.Designer.cs">
+      <DependentUpon>FormAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCiudadesABC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCiudadesABC.Designer.cs">
+      <DependentUpon>FormCiudadesABC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDijkstra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDijkstra.Designer.cs">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGrafo.Designer.cs">
+      <DependentUpon>FormGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaAristas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaAristas.Designer.cs">
+      <DependentUpon>FormListaAristas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasajeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasajeros.Designer.cs">
+      <DependentUpon>FormPasajeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistoVenta.Designer.cs">
+      <DependentUpon>FormRegistoVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVuelos.Designer.cs">
+      <DependentUpon>FormVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVuelosABC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVuelosABC.Designer.cs">
+      <DependentUpon>FormVuelosABC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafo.cs" />
+    <Compile Include="ListaAristas.cs" />
+    <Compile Include="ListaPasajeros.cs" />
+    <Compile Include="ListaVuelos.cs" />
+    <Compile Include="Pasajero.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vertice.cs" />
+    <Compile Include="Vuelo.cs" />
+    <EmbeddedResource Include="FormAceptarGrafo.resx">
+      <DependentUpon>FormAceptarGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsientos.resx">
+      <DependentUpon>FormAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCiudadesABC.resx">
+      <DependentUpon>FormCiudadesABC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDijkstra.resx">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGrafo.resx">
+      <DependentUpon>FormGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaAristas.resx">
+      <DependentUpon>FormListaAristas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasajeros.resx">
+      <DependentUpon>FormPasajeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistoVenta.resx">
+      <DependentUpon>FormRegistoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVuelos.resx">
+      <DependentUpon>FormVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVuelosABC.resx">
+      <DependentUpon>FormVuelosABC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\asientoRojo.png" />
+    <None Include="Resources\asientoVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brontes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brontes2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
